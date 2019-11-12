@@ -74,6 +74,7 @@ export const ProductTable = styled.table`
   }
 
   button {
+    cursor: pointer;
     background: none;
     border: 0;
     padding: 5px;
