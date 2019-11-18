@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  A simple project to shoes e-commerce.
+  A simple project to shoes e-commerce using ReactJs.
 </h3>
 
 <h1 align="center">
