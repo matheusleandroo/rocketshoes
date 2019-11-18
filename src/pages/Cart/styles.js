@@ -28,6 +28,20 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 576px) {
+    footer {
+      button {
+        padding: 10px 10px;
+        margin-right: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+`;
+
+export const DivTable = styled.div`
+  overflow-x: auto;
 `;
 
 export const ProductTable = styled.table`
@@ -93,5 +107,11 @@ export const Total = styled.div`
   strong {
     font-size: 28px;
     margin-left: 5px;
+  }
+
+  @media (max-width: 576px) {
+    strong {
+      font-size: 20px;
+    }
   }
 `;

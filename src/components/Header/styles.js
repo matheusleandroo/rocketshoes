@@ -6,6 +6,12 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
+
+  @media (max-width: 576px) {
+    img {
+      max-width: 190px;
+    }
+  }
 `;
 
 export const Cart = styled(Link)`
@@ -30,6 +36,18 @@ export const Cart = styled(Link)`
     span {
       font-size: 12px;
       color: #999;
+    }
+  }
+
+  @media (max-width: 576px) {
+    div {
+      strong {
+        display: none;
+      }
+
+      span {
+        display: none;
+      }
     }
   }
 `;
