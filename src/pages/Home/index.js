@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { MdShoppingCart } from 'react-icons/md';
+import PropTypes from 'prop-types';
 import { formatPrice } from '../../util/format';
 import api from '../../services/api';
 
@@ -71,5 +72,10 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
+
+Home.propTypes = {
+  addToCartRequest: PropTypes.func.isRequired,
+  amount: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

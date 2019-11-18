@@ -7,6 +7,7 @@ import {
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
+import PropTypes from 'prop-types';
 
 import { formatPrice } from '../../util/format';
 
@@ -100,5 +101,12 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
+
+Cart.propTypes = {
+  cart: PropTypes.arrayOf.isRequired,
+  total: PropTypes.string.isRequired,
+  removeFromCart: PropTypes.func.isRequired,
+  updateAmountRequest: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cart);
