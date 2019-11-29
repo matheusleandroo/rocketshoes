@@ -38,6 +38,7 @@ After instalition, try typing **```yarn -v```** into your command line. You shou
 
 After clone repository, go to folder and follow this steps:
 
+- Run **`yarn global add json-server`** to install json-server;
 - Run **`yarn`** to install dependencies;
 - Run **`json-server server.json -p 3333`** to start api;
 - Run **`yarn start`** in another terminal to start application.
