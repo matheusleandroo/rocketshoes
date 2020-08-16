@@ -34,6 +34,12 @@ Once you have NodeJs instaled, you need to install Yarn. You can install Yarn by
 
 After instalition, try typing **```yarn -v```** into your command line. You should get a response with the version of Yarn.
 
+It is recommended to install the extension ESLint, Prettier, EditorConfig and edit the code editor' settings:
+```
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+```
+
 ## Deploy
 
 After clone repository, go to folder and follow this steps:
